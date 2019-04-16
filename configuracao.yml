@@ -53,8 +53,8 @@
      path: "/etc/sysconfig/network-scripts/route-{{interface_name}}"
      block: |
        #ROTAS PARA O X
-        200.98.32.208/28 via {{gw}}
-        200.98.43.0/24 via {{gw}}   
+        xxx/28 via {{gw}}
+        xxx/24 via {{gw}}   
     when: x == '0' 
 
 
@@ -63,9 +63,9 @@
     blockinfile:
      path: "/etc/sysconfig/network-scripts/route-{{interface_name}}"
      block: |
-      #ROTAS PARA O AVAMAR Y
-      200.221.192.208/28 via {{gw}}
-      200.221.203.0/24 via {{gw}}
+      #ROTAS PARA O  Y
+      xxxx/28 via {{gw}}
+      xxx/24 via {{gw}}
     when: x == '1'
 
   - name: Habilitando Interface de rede
