@@ -18,11 +18,6 @@
       prompt: "Informe qual o GW da rede de Backup"
 
 
-  vars:
-    interface_name:  "{{interface_name}}"
-    ip: "{{ip}}"
-    mascara: "{{mascara}}"
-    x: "{{x}}"
 
   tasks:
 
